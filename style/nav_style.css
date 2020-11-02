@@ -13,8 +13,9 @@ nav .nav-menu {
   text-transform: uppercase;
 }
 .logo {
-  height: 60px;
-  position: absolute;
+  margin: 5px auto;
+  height: 100px;
+  display: block;
 }
 nav li {
   list-style-type: none;
