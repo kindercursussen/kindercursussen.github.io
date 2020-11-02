@@ -14,6 +14,7 @@ nav .nav-menu {
 }
 .logo {
   height: 60px;
+  position: absolute;
 }
 nav li {
   list-style-type: none;
@@ -29,7 +30,7 @@ nav .nav-menu li:hover {
   transition: box-shadow 0.5s;
 }
 
-nav img {
+nav .burger {
   display: none;
   height: 30px;
   padding: 15px;
@@ -84,7 +85,7 @@ nav img {
 /*--------------------------RESPONSIVE NAVIGATION BAR STYLE-------------------------------*/
 
 @media only screen and (max-width: 700px) {
-  nav img {
+  nav .burger {
     display: block;
   }
   nav ul {
