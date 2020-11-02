@@ -13,13 +13,7 @@ nav .nav-menu {
   text-transform: uppercase;
 }
 .logo {
-  padding: 20px 20px;
-  position: absolute;
-  font-weight: bold;
-}
-.logo {
-  color: #000;
-  text-decoration: none;
+  height: 60px;
 }
 nav li {
   list-style-type: none;
