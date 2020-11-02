@@ -27,14 +27,14 @@ nav .nav-menu a {
   color: #333;
 }
 nav .nav-menu li:hover {
-  box-shadow: inset 0px -2px 0px 0px #000;
+  box-shadow: inset 0px -2px 0px 0px #2a9df4;
   transition: box-shadow 0.5s;
 }
 
 nav .burger {
   display: none;
-  height: 40px;
-  padding: 30px 15px;
+  height: 30px;
+  padding: 15px;
   width: auto;
   position: absolute;
   right: 0;
@@ -44,8 +44,8 @@ nav .burger {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   display: none;
   z-index: 20;
   cursor: pointer;
@@ -55,7 +55,7 @@ nav .burger {
   height: 115vh;
   top: 0;
   z-index: 2;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(23,23,23,0.8);
   position: fixed;
   display: flex;
   justify-content: center;
@@ -63,15 +63,16 @@ nav .burger {
   -moz-justify-content: center;
   align-items: center;
   -webkit-align-items: center;
+  -moz-align-items: center;
   visibility: hidden;
 }
 .navbar_burger ul {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 .navbar_burger li {
   list-style-type: none;
-  padding: 20px 20px;
+  padding: 15px 20px;
   text-transform: uppercase;
 }
 .navbar_burger ul a {
@@ -99,7 +100,11 @@ nav .burger {
   .burger_check:checked + .navbar_burger{
     visibility: visible;
   }
+  .burger_check:checked .burger{
+    filter: invert(50%);
+  }
   .logo {
     margin: 5px;
+    height: 60px;
   }
 }
