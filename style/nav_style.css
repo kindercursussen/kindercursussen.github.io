@@ -34,7 +34,7 @@ nav .nav-menu li:hover {
 nav .burger {
   display: none;
   height: 40px;
-  padding: 30px;
+  padding: 30px 15px;
   width: auto;
   position: absolute;
   right: 0;
@@ -98,5 +98,8 @@ nav .burger {
   }
   .burger_check:checked + .navbar_burger{
     visibility: visible;
+  }
+  .logo {
+    margin: 5px;
   }
 }
