@@ -3,22 +3,46 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/nav_style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>Kindercursussen</title>
   </head>
   <body>
     <div class="body-wrapper">
-    <!--Navigation bar-->
+    <!--Navigation bar (future)
     <div id="nav-placeholder">
 
     </div>
 
     <script>
-    $(function(){
-      $("#nav-placeholder").load("nav.html");
+    $.get("nav.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
     });
     </script>
-    <!--end of Navigation bar-->
+    end of Navigation bar (future)-->
+
+    <!--NAVIGATION BAR-->
+    <nav>
+      <a href="index.html"><img class="logo" src="img/logo_kindercursussen.png" alt="logo"></a>
+      <ul class="nav-menu">
+        <li><a href="#">Over ons</a></li>
+        <li><a href="#">Onze service</a></li>
+        <li><a href="#">Inhoud cursus</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <img class="burger" src="img/burger_icon.png" alt='burger_image'>
+    </nav>
+    <input type="checkbox" class="burger_check">
+    <div class="navbar_burger">
+      <ul class="nav_menu_burger">
+        <li><a href="#">Over ons</a></li>
+        <li><a href="#">Onze service</a></li>
+        <li><a href="#">Inhoud cursus</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <!--NAVIGATION BAR END-->
+
     </div>
   </body>
 </html>
