@@ -90,8 +90,8 @@ nav .burger {
   nav .burger {
     display: block;
   }
-  nav ul {
-    visibility: hidden;
+  nav .nav-menu {
+    display: none;
   }
   .burger_check {
     display: block;

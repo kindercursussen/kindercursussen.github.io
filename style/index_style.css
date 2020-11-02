@@ -1,0 +1,41 @@
+/*-------------BANNER STYLING--------------*/
+.banner {
+  height: 100vh;
+  color: white;
+  background-color: salmon;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+}
+#banner_top_tekst {
+  font-size: 3.5em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+#banner_bottom_tekst {
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#banner_button {
+  margin-top: 25px;
+}
+.button_style {
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 20px;
+  background-color: rgba(23,23,23,1);
+  transition: background-color 0.5s;
+  border-radius: 5px;
+}
+.button_style:hover{
+  background-color: rgba(23,23,23,0.7);
+  transition: background-color 0.5s;
+}
