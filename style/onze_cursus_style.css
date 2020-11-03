@@ -1,18 +1,19 @@
+/*-------INHOUDS STYLING---------*/
 .inhoud {
   text-align: center;
-  background-color: #b0b8b4ff;
+  background-color: rgba(8,153,46,0.6);
   padding: 20px;
 }
 #title {
   font-size: 3.5em;
   font-weight: 100;
   text-transform: uppercase;
-  color: #fc766aff;
+  color: white;
 }
 #title_under {
   font-size: 1em;
   text-transform: uppercase;
-  color: white;
+  color: rgb(240,240,240);
 }
 
 .inhoud_block {
@@ -27,10 +28,10 @@
 }
 .inhoud_grid_items div {
   margin: 5px;
-  background-color: #184a45ff;
+  color: rgb(250,218,221);
+  background-color: rgb(86,86,86);
   padding: 20px 10px;
   border-radius: 5px;
-  box-shadow: 0 0 4px 0px black;
 }
 
 .item_title {
@@ -40,7 +41,8 @@
   text-transform: uppercase;
 }
 .item_tekst {
-  color: rgba(190,190,190,1);
+  color: rgba(240,240,240,1);
+  line-height: 1.4em;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -69,5 +71,61 @@
   color: white;
 }
 .link_style {
-  color: #fc766aff;
+  color: rgb(250,218,221);
 }
+.link_style:hover {
+  color: rgb(255,234,240);
+}
+/*-------INHOUDS STYLING END---------*/
+/*-------ONDERWERPEN & UITBEREIDING STYLING---------*/
+/* .onderwerp_uitbereiding_color {
+  background: linear-gradient(90deg, rgba(25,75,70,0.2) 50%, rgba(255,74,181,0.2) 50%);
+} */
+.onderwerp_uitbereiding {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.onderwerpen {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.uitbereiding {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.uitbereinding_img {
+  width: 100%;
+}
+
+.lijst_onderwerpen {
+  list-style-type: square;
+}
+@media only screen and (max-width: 1200px) {
+  .onderwerp_uitbereiding {
+    width: auto;
+  }
+  /* .onderwerpen {
+    background-color: rgba(25,75,70,0.2);
+  }
+  .uitbereiding {
+    background-color: rgba(255,74,181,0.2);
+  }
+  .onderwerp_uitbereiding_color {
+    background: linear-gradient(90deg,  rgba(25,75,70,0) 50%, rgba(255,74,181,0) 50%);
+  } */
+}
+@media only screen and (max-width: 550px) {
+  .onderwerpen {
+    width: 100%;
+  }
+  .uitbereiding {
+    width: 100%;
+  }
+  .onderwerp_uitbereiding {
+    flex-flow: column;;
+  }
+}
+/*-------ONDERWERPEN & UITBEREIDING STYLING END---------*/
