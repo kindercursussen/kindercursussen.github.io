@@ -4,22 +4,21 @@
   position: relative;
   width: 100%;
   padding: 25px;
-
+  box-sizing: border-box;
 }
 
 .top {
-  width: 40%;
+  width: 45%;
   padding: 25px;
   padding-right: 40px;
   margin-right: 40px;
   box-sizing: border-box;
-
 }
 
 .top_header {
   margin-bottom: 20px;
+  line-height: 1.4em;
 }
-
 .top_header h1 {
   line-height: 2.6;
 }
@@ -27,12 +26,10 @@
 .top_bulletpoints {
   display: flex;
 }
-
 .bulletpoints_icons {
   list-style-type: none;
   margin-right: 8px;
 }
-
 .bulletpoints_icons li {
   line-height: 2;
   margin-top: 10px;
@@ -45,56 +42,45 @@
   text-transform: uppercase;
   font-weight: 350;
 }
-
 .bulletpoints li {
   line-height: 2.2;
   margin-top: 10px;
 }
-
 .fa-map-marker, .fa-mobile-phone, .fa-envelope {
-  color: rgba(211,22,35,0.9);
+  color: rgba(231,84,128,1);
 }
-
 .fa-mobile-phone {
   font-size: 40px;
 }
-
 .fa-map-marker {
   font-size: 30px;
 }
-
 .fa-envelope {
   font-size: 24px;
 }
 
 .container {
-  width: 40%;
+  width: 50%;
   position: absolute;
   box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
-  transform: translate(45vw, 30px);
+  transform: translate(45vw, 40px);
   background-color: rgba(255,255,255,1);
 }
 
-.bottom  {
+.kindercursussen_wrapper  {
   padding: 25px 50px;
   color: white;
-  background-color: rgba(211, 22, 35, 0.9);
+  line-height: 1.4em;
+  background-color: rgb(231,84,128);
 }
-
-.bottom h1 {
+.kindercursussen_wrapper h1 {
   line-height: 2.6;
-}
-
-.border {
-  border: 2px solid rgba(0,0,0,1);
-  border-radius: 5px;
 }
 
 .container form {
   padding: 25px;
   margin: 25px;
 }
-
 .container input[type=text], .container input[type=email], .container input[type=tel], #subj {
   box-sizing: border-box;
   width: 100%;
@@ -102,16 +88,17 @@
   margin-top: 5px;
   margin-bottom: 10px;
   resize: none;
-  border: 1px solid rgba(255,0,0,0.5);
-  background-color: rgba(211,22,35,0.03);
+  border: 1px solid rgb(231,84,128);
+  background-color: rgba(231,84,128,0.05);
 }
-
 .container input[type=text]:focus, .container input[type=email]:focus, .container input[type=tel]:focus, #subj:focus {
   outline: none;
-  border: 1px solid rgba(255,0,0,0.5);
-  background-color: rgba(255,0,0,0.1);
+  border: 1px solid rgba(231,84,128,0.5);
+  background-color: rgba(231,84,128,0.1);
 }
-
+#subj {
+  height: 85px;
+}
 .container input[type=submit] {
   width: 100%;
   border: none;
@@ -120,11 +107,10 @@
   text-transform: uppercase;
   font-weight: 400;
   font-size: 15px;
-  background-color: rgba(211,22,35,0.9);
+  background-color: rgba(231,84,128,1);
 }
-
 .container input[type=submit]:hover {
-  background-color: rgba(211,22,35,0.8);
+  background-color: rgba(231,84,128,0.8);
   cursor: pointer;
 }
 
@@ -135,7 +121,6 @@
     flex-direction: column;
     box-sizing: border-box;
   }
-
   .top {
     width: 100%;
   }
@@ -144,5 +129,4 @@
     position: static;
     transform: translate(0, 0);
   }
-
 }
