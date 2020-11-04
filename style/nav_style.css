@@ -17,6 +17,12 @@ nav .nav-menu {
   height: 100px;
   display: block;
 }
+.logo2 {
+  display: none;
+  margin: 5px auto;
+  height: 100px;
+  display: block;
+}
 nav li {
   list-style-type: none;
   padding: 20px 20px;
@@ -55,7 +61,7 @@ nav .burger {
   height: 115vh;
   top: 0;
   z-index: 2;
-  background-color: rgba(23,23,23,0.8);
+  background-color: rgba(23,23,23,0.9);
   position: fixed;
   display: flex;
   justify-content: center;
@@ -104,6 +110,9 @@ nav .burger {
     filter: invert(50%);
   }
   .logo {
+    display: none;
+  }
+  .logo2 {
     margin: 5px;
     height: 60px;
   }
