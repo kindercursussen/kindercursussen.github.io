@@ -112,6 +112,7 @@ nav .burger {
     display: none;
   }
   .logo2 {
+    display: block;
     margin: 5px;
     height: 60px;
   }
