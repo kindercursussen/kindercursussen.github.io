@@ -21,7 +21,6 @@ nav .nav-menu {
   display: none;
   margin: 5px auto;
   height: 100px;
-  display: block;
 }
 nav li {
   list-style-type: none;
