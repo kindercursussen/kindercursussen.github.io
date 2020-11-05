@@ -3,9 +3,12 @@ function burger_open_close() {
   var y = document.getElementById("burgerIcon");
   var z = document.getElementById("burgerTitle");
   var w = document.getElementById("menuBurger");
+  var body = document.getElementById("body");
+
   if (x.className === "navbar_burger") {
     x.className += " responsive";
     y.className += " invert";
+    body.className += " overflowY";
     window.setTimeout(opacityAddTitle, 500);
     window.setTimeout(opacityAddMenu, 1000);
   } else {
@@ -13,6 +16,7 @@ function burger_open_close() {
     y.className = "burger_icon";
     z.className = "title";
     w.className = "nav_menu_burger";
+    body.className = "";
   }
 }
 

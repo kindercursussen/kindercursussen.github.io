@@ -137,6 +137,9 @@ nav img:hover {
     opacity: 1 !important;
     transition: opacity 1s;
   }
+  .overflowY {
+    overflow-y: hidden;
+  }
 }
 
 
