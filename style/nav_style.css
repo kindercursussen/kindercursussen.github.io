@@ -70,6 +70,7 @@ nav .burger_icon {
   -webkit-align-items: center;
   -moz-align-items: center;
   visibility: hidden;
+  opacity: 0;
 }
 .navbar_burger ul {
   text-align: center;
@@ -115,7 +116,10 @@ nav img:hover {
 }
 .responsive {
   visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 .invert {
   filter: invert(50%);
+  transition: filter 0.5s;
 }
