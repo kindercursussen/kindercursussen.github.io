@@ -60,21 +60,32 @@ nav .burger_icon {
   height: 100vh;
   top: 0;
   z-index: 2;
-  background-color: rgba(23,23,23,0.9);
+  background-color: rgba(23,23,23,1);
   position: fixed;
   display: flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
   align-items: center;
   -webkit-align-items: center;
   -moz-align-items: center;
   visibility: hidden;
   opacity: 0;
 }
-.navbar_burger ul {
+.navbar_burger .title {
+  position: absolute;
+  color: rgb(255,255,255);
+  line-height: 0.8em;
+  font-size: 1.9em;
+  font-weight: 200;
+  top: 80px;
   text-align: center;
-  font-size: 25px;
+  width: 100%;
+  opacity: 0;
+}
+.nav_menu_burger {
+  opacity: 0;
+}
+.navbar_burger ul {
+  font-size: 1.7em;
+  font-weight: 100;
 }
 .navbar_burger li {
   list-style-type: none;
@@ -83,7 +94,7 @@ nav .burger_icon {
 }
 .navbar_burger ul a {
   text-decoration: none;
-  color: #FFF;
+  color: rgb(200,200,200);
 }
 .navbar_burger ul li a:hover {
   color: #DDA;
@@ -113,13 +124,23 @@ nav img:hover {
     margin: 0px;
     height: 60px;
   }
+  .responsive {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  .invert {
+    filter: invert(50%);
+    transition: filter 0.5s;
+  }
+  .opacity {
+    opacity: 1 !important;
+    transition: opacity 1s;
+  }
 }
-.responsive {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.5s;
-}
-.invert {
-  filter: invert(50%);
-  transition: filter 0.5s;
+
+
+/*-------SPAN COLORS--------*/
+.green_color {
+  color: rgba(8,153,46,1);
 }
