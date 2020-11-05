@@ -13,13 +13,13 @@ nav .nav-menu {
   text-transform: uppercase;
 }
 .logo {
-  margin: 5px auto;
+  margin: 0px auto;
   height: 100px;
   display: block;
 }
 .logo2 {
   display: none;
-  margin: 5px auto;
+  margin: 0px auto;
   height: 100px;
 }
 nav li {
@@ -36,7 +36,7 @@ nav .nav-menu li:hover {
   transition: box-shadow 0.5s;
 }
 
-nav .burger {
+nav .burger_icon {
   display: none;
   height: 30px;
   padding: 15px;
@@ -89,31 +89,33 @@ nav .burger {
   transition: color 0.5s;
 }
 
+nav img {
+
+}
+nav img:hover {
+  cursor: pointer;
+}
 /*--------------------------RESPONSIVE NAVIGATION BAR STYLE-------------------------------*/
 
 @media only screen and (max-width: 700px) {
-  nav .burger {
+  nav .burger_icon {
     display: block;
   }
   nav .nav-menu {
     display: none;
-  }
-  .burger_check {
-    display: block;
-    opacity: 0;
-  }
-  .burger_check:checked + .navbar_burger{
-    visibility: visible;
-  }
-  .burger_check:checked .burger{
-    filter: invert(50%);
   }
   .logo {
     display: none;
   }
   .logo2 {
     display: block;
-    margin: 5px;
+    margin: 0px;
     height: 60px;
   }
+}
+.responsive {
+  visibility: visible;
+}
+.invert {
+  filter: invert(50%);
 }
