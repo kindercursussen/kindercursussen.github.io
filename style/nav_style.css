@@ -130,6 +130,7 @@ nav img:hover {
     transition: opacity 0.5s;
   }
   .invert {
+    position: fixed !important;
     filter: invert(50%);
     transition: filter 0.5s;
   }
