@@ -66,14 +66,25 @@
 @media only screen and (max-width: 1200px) {
 }
 @media only screen and (max-width: 800px) {
+  .main_first {
+    display: block;
+  }
   .main_top .under_title {
     width: auto;
     padding: 0 15px;
+  }
+  .item {
+    margin: 0 50px;
   }
 }
 @media only screen and (max-width: 550px) {
   .item {
     margin: 0 30px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .item {
+    margin: 0 15px;
   }
 }
 
@@ -124,10 +135,13 @@
 }
 @media only screen and (max-width: 800px) {
   .main_second {
-    flex-flow: column;
-    justify-content: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
+    display: block;
+  }
+  .main_img {
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
   }
 }
 @media only screen and (max-width: 550px) {
