@@ -23,7 +23,9 @@
   width: 1200px;
 }
 .inhoud_grid_items {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (33.33%)[3];
   grid-template-columns: repeat(3, 33.33%);
 }
 .inhoud_grid_items div {
@@ -52,11 +54,13 @@
 }
 @media only screen and (max-width: 900px) {
   .inhoud_grid_items {
+    -ms-grid-columns: (50%)[2];
     grid-template-columns: repeat(2, 50%);
   }
 }
 @media only screen and (max-width: 550px) {
   .inhoud_grid_items {
+    -ms-grid-columns: (100%)[1];
     grid-template-columns: repeat(1, 100%);
   }
 }
