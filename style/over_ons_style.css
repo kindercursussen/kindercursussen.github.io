@@ -144,7 +144,11 @@
     -moz-align-items: center;
   }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
+.main_img img {
+  width: 100vw;
+  height: 100%;
+}
 }
 
 /*-------SPAN LINE--------*/
