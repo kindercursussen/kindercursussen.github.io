@@ -1,0 +1,149 @@
+/*--------------------------NAVIGATION BAR STYLE-------------------------------*/
+
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+nav .nav-menu {
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  text-transform: uppercase;
+}
+.logo {
+  position: absolute;
+  height: 60px;
+  display: block;
+}
+.logo2 {
+  display: none;
+  margin: 0px auto;
+  height: 100px;
+}
+nav li {
+  list-style-type: none;
+  padding: 20px 20px;
+  position: relative;
+  font-size: 0.95em;
+}
+nav .nav-menu a {
+  text-decoration: none;
+  color: #333;
+}
+nav .nav-menu li:hover {
+  box-shadow: inset 0px -2px 0px 0px #2a9df4;
+  transition: box-shadow 0.5s;
+}
+
+nav .burger_icon {
+  display: none;
+  height: 30px;
+  padding: 15px;
+  width: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.burger_check {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  display: none;
+  z-index: 20;
+  cursor: pointer;
+}
+.navbar_burger {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(23,23,23,1);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.navbar_burger .title {
+  position: absolute;
+  color: rgb(255,255,255);
+  line-height: 0.8em;
+  font-size: 1.9em;
+  font-weight: 200;
+  top: 80px;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+}
+.nav_menu_burger {
+  opacity: 0;
+}
+.navbar_burger ul {
+  font-size: 1.7em;
+  font-weight: 100;
+}
+.navbar_burger li {
+  list-style-type: none;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+.navbar_burger ul a {
+  text-decoration: none;
+  color: rgb(200,200,200);
+}
+.navbar_burger ul li a:hover {
+  color: #DDA;
+  transition: color 0.5s;
+}
+
+nav img {
+
+}
+nav img:hover {
+  cursor: pointer;
+}
+/*--------------------------RESPONSIVE NAVIGATION BAR STYLE-------------------------------*/
+
+@media only screen and (max-width: 700px) {
+  nav .burger_icon {
+    display: block;
+  }
+  nav .nav-menu {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .logo2 {
+    display: block;
+    margin: 0px;
+    height: 60px;
+  }
+  .responsive {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  .pos {
+    position: fixed !important;
+  }
+  .opacity {
+    opacity: 1 !important;
+    transition: opacity 1s;
+  }
+  .overflowY {
+    overflow-y: hidden;
+  }
+}
+
+
+/*-------SPAN COLORS--------*/
+.green_color {
+  color: rgba(8,153,46,1);
+}
