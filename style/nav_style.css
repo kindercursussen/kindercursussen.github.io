@@ -101,12 +101,7 @@ nav .burger_icon {
   transition: color 0.5s;
 }
 
-nav img {
 
-}
-nav img:hover {
-  cursor: pointer;
-}
 /*--------------------------RESPONSIVE NAVIGATION BAR STYLE-------------------------------*/
 
 @media only screen and (max-width: 700px) {
