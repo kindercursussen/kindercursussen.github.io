@@ -1,11 +1,14 @@
 const front = document.querySelector(".front");
 const wrapper = document.querySelector("#title_wrapper");
+const front_wrapper = document.querySelector(".front_wrapper")
 const title = document.querySelector("#title");
 const title2 = document.querySelector("#title2");
 const body_wrapper = document.querySelector(".body_wrapper");
 const body = document.querySelector("#body");
+const logo = document.querySelector("#logo");
 
 const tl = new TimelineMax();
+const tl_logo = new TimelineMax();
 
 tl.to(body, 0, {overflow: "hidden", ease: Power2.easeInOut})
 .fromTo(wrapper, 0.5, {opacity: "0"}, {opacity: "1", ease: Power2.easeInOut})
@@ -15,8 +18,11 @@ tl.to(body, 0, {overflow: "hidden", ease: Power2.easeInOut})
 .fromTo(title, 1.5, {y:"200%"}, {y:"0%", ease: Power2.easeInOut},"-=3")
 .fromTo(title2, 1.5, {y:"100%"}, {y:"0%", ease: Power2.easeInOut},"-=2")
 .to(front, 1, {opacity:"0", ease: Power2.easeInOut},"+=1")
-.to(wrapper, 1.5, {scale:"0", ease: Power2.easeInOut},"-=1")
-.to(wrapper, 2, {rotation:"90", ease: Power2.easeInOut},"-=1.5")
+.to(front_wrapper, 1.5, {scale:"0", ease: Power2.easeInOut},"-=1")
+.to(front_wrapper, 2, {rotation:"90", ease: Power2.easeInOut},"-=1.5")
 .to(front, 0, {display: "none"})
 .to(body, 0, {overflow: "unset", ease: Power2.easeInOut})
 ;
+
+tl_logo.fromTo(logo, 1, {x: "-100%"}, {x: "-10%", ease: Power2.easeInOut}, "+=1")
+.fromTo(logo, 1, {opacity: "0"}, {opacity: "1", ease: Power2.easeInOut}, "-=1");

@@ -58,6 +58,10 @@
   z-index: 15;
 }
 
+.front_wrapper {
+  display: flex;
+  align-items: center;
+}
 #title_wrapper {
   overflow: hidden;
   text-align: center;
