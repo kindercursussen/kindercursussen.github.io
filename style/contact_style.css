@@ -134,7 +134,7 @@
   text-align: center;
   margin: 15px;
   padding: 10px;
-  background-color: rgb(231,84,128);
+  background-color: rgb(69, 167, 95);
   border-radius: 10px;
 }
 .box2 {  
@@ -158,7 +158,7 @@ a.button {
   transition: all 0.2s;
 }
 a.button:hover{
-  color:rgb(231,84,128);
+  color:rgb(69, 167, 95);
   background-color:#FFFFFF;
   cursor: pointer;
 }
