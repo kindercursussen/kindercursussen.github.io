@@ -11,10 +11,11 @@ function myFunction() {
 
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
-  if(winScroll > main_imgPos - window.innerHeight/2) {
+  const openHeight = winScroll > main_imgPos - window.innerHeight / 1.2;
+  if(openHeight) {
       animationOnderwerp(main_img, false);
     }
-    if(winScroll > main_side_textPos - window.innerHeight/2){
+    if(openHeight){
       animationmain_side_text(main_side_text, false);
     }
 
