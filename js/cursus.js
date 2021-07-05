@@ -11,13 +11,14 @@ function myFunction() {
 
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
-  if(winScroll > onderwerpenPos - window.innerHeight/2) {
+  const openHeightOnderwerpen = winScroll > onderwerpenPos - window.innerHeight/1.5;
+  const openHeightUitbereiding = winScroll > uitbereidingPos - window.innerHeight/1.5;
+  if(openHeightOnderwerpen) {
       animationOnderwerp(onderwerpen, false);
     }
-    if(winScroll > uitbereidingPos - window.innerHeight/2){
+    if(openHeightUitbereiding){
       animationUitbereiding(uitbereiding, false);
     }
-
 }
 
 function animationOnderwerp(ond, secondTime) {

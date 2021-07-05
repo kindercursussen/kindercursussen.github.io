@@ -11,14 +11,14 @@ function myFunction() {
 
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
-  const openHeight = winScroll > main_imgPos - window.innerHeight / 1.2;
-  if(openHeight) {
+  const openHeightImg = winScroll > main_imgPos - window.innerHeight / 1.2;
+  const openHeightText = winScroll > main_side_textPos - window.innerHeight / 1.2;
+  if(openHeightImg) {
       animationOnderwerp(main_img, false);
     }
-    if(openHeight){
+    if(openHeightText) {
       animationmain_side_text(main_side_text, false);
     }
-
 }
 
 function animationOnderwerp(img, secondTime) {
