@@ -143,11 +143,44 @@
 p#text {
   padding: 15px 0;
 }
+
+/*-----------BOX STYLE END----------- */
+/*-----------RECTANGLE STYLE----------- */
+
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+.container3 .fa-map-marker, .container3 .fa-mobile-phone, .container3 .fa-envelope {
+  color: rgb(255, 255, 255);
+  font-size: 55px;
+}
+.rectangle {
+  box-sizing: border-box;
+  max-width: 300px;
+  width: 50%;
+  padding: 15px;
+  border: 5px solid white;
+  border-radius: 15px;
+  background: rgb(69, 167, 95);
+}
+.rectangle .title {
+  font-size: 3em;
+  padding: 0.5em 0 1em 0;
+  color: white;
+}
+.rectangle .content {
+  font-size: 1em;
+  font-weight: 400;
+  color: rgb(94, 57, 63);
+}
 a.button {
   display:inline-block;
   padding:0.35em 1.2em;
   border:0.1em solid #FFFFFF;
-  margin:0 0.3em 0.3em 0;
+  margin:2em 0.3em 0.3em 0;
   border-radius:0.12em;
   box-sizing: border-box;
   text-decoration:none;
@@ -162,8 +195,7 @@ a.button:hover{
   background-color:#FFFFFF;
   cursor: pointer;
 }
-
-/*-----------BOX STYLE END----------- */
+/*-----------RECTANGLE STYLE END----------- */
 
 /*-----------CONTACT US RESPONSIVE STYLE----------- */
 
@@ -197,6 +229,13 @@ a.button:hover{
   }
   .box2 {  
     transform: translateY(0);
+  }
+  .rectangle {
+    max-width: none;
+    width: 100%;
+    border: 5px hidden white;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
   }
 }
 
