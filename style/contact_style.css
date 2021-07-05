@@ -196,6 +196,19 @@ a.button:hover{
   cursor: pointer;
 }
 /*-----------RECTANGLE STYLE END----------- */
+/*-----------IMAGE STYLE----------- */
+.container4 {
+  width: 55%;
+}
+.container4 .img {
+  height: 115%;
+  background-image: url(../img/kid_reading.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateY(35px);
+}
+/*-----------IMAGE STYLE END----------- */
 
 /*-----------CONTACT US RESPONSIVE STYLE----------- */
 
@@ -237,6 +250,12 @@ a.button:hover{
     border-top: 5px solid white;
     border-bottom: 5px solid white;
   }
+  .container4 {
+    width: 100%;
+  }
+  .container4 .img {
+    height: 550px;
+    transform: translateY(0);
+  }
 }
-
 /*-----------CONTACT US RESPONSIVE STYLE END----------- */
