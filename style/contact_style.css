@@ -37,6 +37,14 @@
 #tel {
   line-height: 1.3;
 }
+.tel {
+  text-decoration: none;
+  color: black;
+}
+#mail {
+  text-decoration: none;
+  color: black;
+}
 .bulletpoints {
   list-style-type: none;
   text-transform: uppercase;
