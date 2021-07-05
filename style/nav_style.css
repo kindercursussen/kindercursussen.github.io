@@ -1,7 +1,7 @@
 /*--------------------------NAVIGATION BAR STYLE-------------------------------*/
 
 nav {
-  width: 100%;
+  width: 100vw;
   position: relative;
   z-index: 10;
 }
