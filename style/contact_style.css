@@ -5,13 +5,17 @@
   width: 100%;
   padding: 25px;
   box-sizing: border-box;
+  justify-content: center;
+}
+.contact_wrapper_content {
+  display: flex;
+  max-width: 100%;
+  width: 1200px;
 }
 
 .top {
-  width: 45%;
-  padding: 25px;
-  padding-right: 40px;
-  margin-right: 40px;
+  width: 400px;
+  padding: 0 25px;
   box-sizing: border-box;
 }
 
@@ -55,7 +59,7 @@
   margin-top: 10px;
 }
 .fa-map-marker, .fa-mobile-phone, .fa-envelope {
-  color: rgba(231,84,128,1);
+  color: rgb(231,84,128);
 }
 .fa-mobile-phone {
   font-size: 40px;
@@ -206,22 +210,22 @@ a.button:hover{
 /*-----------RECTANGLE STYLE END----------- */
 /*-----------IMAGE STYLE----------- */
 .container4 {
-  width: 55%;
+  width: 70%;
 }
 .container4 .img {
-  height: 115%;
+  height: 100%;
   background-image: url(../img/kid_reading.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transform: translateY(35px);
+  /* transform: translateY(35px); */
 }
 /*-----------IMAGE STYLE END----------- */
 
 /*-----------CONTACT US RESPONSIVE STYLE----------- */
 
 @media only screen and (max-width: 700px) {
-  .contact_wrapper {
+  .contact_wrapper_content {
     flex-direction: column;
     box-sizing: border-box;
   }

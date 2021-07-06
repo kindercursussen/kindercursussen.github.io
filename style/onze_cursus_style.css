@@ -1,7 +1,7 @@
 /*-------INHOUDS STYLING---------*/
 .inhoud {
   text-align: center;
-  background-color: rgba(8,153,46,0.6);
+  background-color: rgba(8,153,46,0.9);
   padding: 20px;
 }
 #title {
@@ -12,7 +12,7 @@
 }
 #title_under {
   font-size: 1em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: rgb(240,240,240);
 }
 
@@ -27,10 +27,10 @@
   flex-wrap: wrap;
 }
 .inhoud_grid_items div {
-  width: 32%;
+  width: 100%;
   margin: 5px;
   color: rgb(250,218,221);
-  background-color: rgb(86,86,86);
+  background-color: rgb(46, 122, 155);
   padding: 20px 10px;
   border-radius: 5px;
   box-sizing: border-box;
@@ -74,8 +74,8 @@
   text-align: center;
 }
 .accreditatie_tekst{
-  font-size: 1.1em;
-  font-weight: bold;
+  font-size: 1em;
+  /* font-weight: bold; */
   color: white;
 }
 .link_style {
@@ -86,24 +86,26 @@
 }
 /*-------INHOUDS STYLING END---------*/
 /*-------ONDERWERPEN & UITBEREIDING STYLING---------*/
-/* .onderwerp_uitbereiding_color {
-  background: linear-gradient(90deg, rgba(25,75,70,0.2) 50%, rgba(255,74,181,0.2) 50%);
-} */
 .onderwerp_uitbereiding {
   display: flex;
   width: 1200px;
   margin: 0 auto;
 }
+
+.onderwerp_uitbereiding_top_tekst {
+  padding: 20px;
+  text-align: center;
+}
 .onderwerpen {
   width: 50%;
-  padding: 20px;
+  padding: 0 20px;
   box-sizing: border-box;
   opacity: 0;
 }
 .uitbereiding {
   width: 50%;
   height: 100%;
-  padding: 20px;
+  padding: 0 20px;
   box-sizing: border-box;
   opacity: 0;
 }
