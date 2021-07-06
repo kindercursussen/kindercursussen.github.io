@@ -1,101 +1,3 @@
-.main_first {
-  margin-top: 30px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  align-items: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  flex-flow: column;
-}
-.main_top .title {
-  font-weight: 200;
-  font-size: 2.2em;
-  color: rgb(40,40,40);
-  text-transform: uppercase;
-  text-align: center;
-}
-.main_top .under_title {
-  width: 800px;
-  text-align: center;
-  line-height: 1.4em;
-  margin-top: 25px;
-}
-.main_top a {
-  padding: 10px 40px;
-  border-radius: 3px;
-  background-color: rgb(40,40,40);
-  display: table;
-  margin: 20px auto 0px auto;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.9em;
-  color: white;
-}
-.main_top a:hover {
-  background-color: rgb(50,50,50);
-}
-.main_items {
-  display: flex;
-  justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-}
-.main_items {
-  text-align: center;
-  text-transform: uppercase;
-  padding: 40px;
-}
-.item {
-  display: flex;
-  flex-flow: column;
-  margin: 0 75px;
-}
-.item_amount {
-  font-size: 4em;
-  font-weight: 50;
-  color: rgb(190,190,190);
-}
-.item_type {
-  font-size: 0.9em;
-  font-weight: 400;
-}
-/*--------RESPONSIVE STYLING MAIN FIRST---------*/
-@media only screen and (max-width: 1200px) {
-}
-@media only screen and (max-width: 800px) {
-  .main_first {
-    display: block;
-  }
-  .main_top .under_title {
-    width: auto;
-    padding: 0 15px;
-  }
-  .item {
-    margin: 0 50px;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .item {
-    margin: 0 30px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .item {
-    margin: 0 15px;
-  }
-}
-
-.big_img {
-  height: 500px;
-  width: 100%;
-  background-image: url('../img/kind_hand_voor_ogen.jpg');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .main_second_wrapper {
   width: 100%;
   display: flex;
@@ -111,7 +13,6 @@
 }
 .main_img {
   margin: 0 auto;
-  opacity: 0;
 }
 .main_img img {
   height: 500px;
@@ -121,7 +22,6 @@
 }
 .main_side_text {
   padding: 30px;
-  opacity: 0;
 }
 .main_side_text .title {
   font-weight: 200;
