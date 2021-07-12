@@ -1,0 +1,29 @@
+.page_not_found_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.page_not_found_content * {
+    width: 100vw;
+    text-align: center;
+}
+.page_not_found_content #page_not_found_title1 {
+    color: rgba(0, 0, 0, 0.11);
+    text-shadow: 0px 0px rgb(224, 224, 224);
+}
+.page_not_found_content .page_not_found_title {
+    margin: 25px;
+    font-weight: 900;
+    text-shadow: 0px 2px rgb(224, 224, 224);
+}
+.page_not_found_content .page_not_found_text {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.page_not_found_content .page_not_found_link {
+    /* color: rgb(231,84,128); */
+    color: rgb(130, 159, 255);
+    text-decoration: none;
+}
